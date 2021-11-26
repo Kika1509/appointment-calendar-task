@@ -1,13 +1,83 @@
 body {
+  background: url("images/bkg.jpg");
+  background-size: cover;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #9E9E9E;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root > div {
+  margin: auto;
+  width: 50%;
+}
+
+#root > div > div {
+  padding: 30px;
+}
+
+#root > div > div > div.appointment-picker {
+  width: auto;
+}
+
+#root > div > div > div.appointment-picker {
+  height: 60em;
+  display: -webkit-inline-box;
+}
+
+#root > div > div > div.appointment-picker > div > div.appointment-picker__col__name {
+  margin-bottom: 20px;
+}
+
+.appointment-picker__col--selected, .appointment-picker__col--enabled:hover {
+  background-color: transparent!important;
+}
+
+.blank {
+  margin-bottom: 0!important;
+  border-radius: 0.4em;
+  height: 2em!important;;
+}
+
+#root > div > h1, #root > div > p {
+  padding-left: 30px;
+  line-height: 2em;
+}
+
+#blue {
+  background-color: #4FC3F7;
+  color: white;
+  padding: 5px;
+  border-radius: 0.4em;
+}
+
+#grey {
+  background-color: #E0E0E0;
+  color: white;
+  padding: 5px;
+  border-radius: 0.4em;
+}
+
+#green {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px;
+  border-radius: 0.4em;
+}
+
+button {
+  margin-left: 30px;
+  font-size: 0.9em;
+  color: white;
+  border-radius: 0.4em;
+  padding: 10px;
+  background-color: black;
 }
